@@ -51620,6 +51620,10 @@ function () {
       this.angle += MathHelper_1.MathHelper.toDegrees(angular_velocity) * delta;
       this.sprite.x = this.position.x - this.position.y;
       this.sprite.y = (this.position.x + this.position.y) / 1.75;
+      if (this.position.x > 940) this.position.x = 320;
+      if (this.position.x < 320) this.position.x = 940;
+      if (this.position.y > 280) this.position.y = -350;
+      if (this.position.y < -350) this.position.y = 280;
       if (this.angle < 0) this.angle = 6.28 + this.angle;
       if (this.angle > 6.28) this.angle -= 6.28;
       var frame = Math.floor(this.angle / (6.28 / 32));

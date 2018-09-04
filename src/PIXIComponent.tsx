@@ -41,7 +41,6 @@ class PIXIComponent extends Component {
         PIXI.loader
             .add("land", "sprites/land.png")
             .add("car", "sprites/car.json")
-            .add("mycar", "sprites/mycar.png")
             .load(this.initialize);
     };
     initialize = () => {

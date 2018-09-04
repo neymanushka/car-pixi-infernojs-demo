@@ -51773,7 +51773,7 @@ function (_inferno_1$Component) {
     };
 
     _this.setup = function () {
-      PIXI.loader.add("land", "sprites/land.png").add("car", "sprites/car.json").add("mycar", "sprites/mycar.png").load(_this.initialize);
+      PIXI.loader.add("land", "sprites/land.png").add("car", "sprites/car.json").load(_this.initialize);
     };
 
     _this.initialize = function () {
